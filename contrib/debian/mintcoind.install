@@ -1,0 +1,2 @@
+debian/bin/Koalacoind usr/bin
+src/Koalacoind usr/lib/Koalacoin

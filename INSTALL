@@ -1,0 +1,9 @@
+Building Koalacoin
+
+See doc/readme-qt.rst for instructions on building Koalacoin QT,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of Koalacoin.
+
+See doc/build-*.txt for instructions on building Koalacoind,
+the intended-for-services, no-graphical-interface, reference
+implementation of Koalacoin.

@@ -1,0 +1,13 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Koalacoin
+Comment=Koalacoin P2P Cryptocurrency
+Comment[fr]=Koalacoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Koalacoin, eşten eşe kriptografik sanal para birimi
+Comment[es]=Koalacoin, una criptomoneda P2P
+Exec=/usr/bin/Koalacoin-qt
+Terminal=false
+Type=Application
+Icon=/usr/share/pixmaps/bitcoin80.xpm
+MimeType=x-scheme-handler/Koalacoin;
+Categories=Office;

@@ -1,0 +1,5 @@
+Koalacoin-qt usr/bin
+share/pixmaps/bitcoin32.xpm usr/share/pixmaps
+share/pixmaps/bitcoin80.xpm usr/share/pixmaps
+debian/Koalacoin-qt.desktop usr/share/applications
+debian/Koalacoin-qt.protocol usr/share/kde4/services/
