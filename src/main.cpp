@@ -944,7 +944,7 @@ int64 GetProofOfWorkReward(int nHeight, int64 nFees, uint256 prevHash)
 
     if(nHeight == 1)
     {
-        nSubsidy = TAX_PERCENTAGE * CIRCULATION_MONEY;
+        nSubsidy = 0.0055 * 400000000;
         return nSubsidy + nFees;
     }
     else if(nHeight == 2)
