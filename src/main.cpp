@@ -940,22 +940,10 @@ static const int CUTOFF_HEIGHT = 7200; // Height at the end of 8 weeks
 // miner's coin base reward based on nBits
 int64 GetProofOfWorkReward(int nHeight, int64 nFees, uint256 prevHash)
 {
-    int64 nSubsidy = 28000 * COIN;
+  int64 nSubsidy = 28000*COIN;
 
-        if(nHeight == 1)
-        {
-        nSubsidy = 1100000 * COIN;
-        }
-
-    else if(nHeight > CUTOFF_HEIGHT)
-    {
-        return nMinSubsidy + nFees;
-    }
-
-    std::string cseed_str = prevHash.ToString().substr(14,7);
-    const char* cseed = cseed_str.c_str();
-    long seed = hex2long(cseed);
-    nSubsidy += generateMTRandom(seed, 0) * COIN;
+    if (nHeight == 1)
+        nSubsidy = 1100000 * COIN;  //
  
     return nSubsidy + nFees;
 }
