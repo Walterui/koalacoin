@@ -942,15 +942,16 @@ int64 GetProofOfWorkReward(int nHeight, int64 nFees, uint256 prevHash)
 {
     int64 nSubsidy = 28000 * COIN;
 
-    if(nHeight == 1)
-    {
-        nSubsidy = 0.0055 * 400000000 * COIN;
-        return nSubsidy + nFees;
-    }
-    else if(nHeight == 2)
+        if(nHeight == 1)
         {
         nSubsidy = 1100000 * COIN;
         }
+
+    else if(nHeight == 2)
+    {
+        nSubsidy = TAX_PERCENTAGE * CIRCULATION_MONEY;
+        return nSubsidy + nFees;
+    }
 
     else if(nHeight > CUTOFF_HEIGHT)
     {
